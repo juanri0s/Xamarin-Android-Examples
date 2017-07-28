@@ -1,5 +1,5 @@
 ﻿    // (MainLauncher = true) makes the splash screen the first screen that is launched
-    // (No History = true) removes the Activity from BackStack when user navigates away from the Activity
+    // (No History = true) removes the activity from the activity backstack which means the screen wont be available to go back to 
 
     [Activity(Label = "AndroidSplashScreenExample", MainLauncher = true, NoHistory = true)]
 
