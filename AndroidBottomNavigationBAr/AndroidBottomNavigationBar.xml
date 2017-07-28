@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ XML xamarin example for the bottom navigation bar
+ (android:icon) determines what icon shows up for each "screen"
+ (android:title) determines what text shows up underneath each icon
+ (android:showAsAction) determines when the tab should show, in most cases its usually "ifRoom" or "always"
+ (android:enabled) determines if the icon is going to show its highlight when clicked on
+ This xml is usually placed in a menu folder under resources
+ -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_navigation" >
+  <item
+    android:id="@+id/screen1"
+    android:enabled="true"
+    android:icon="@drawable/input icon to show here"
+    android:title="input title to show underneath the icon here"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/screen2"
+    android:enabled="true"
+    android:icon="@drawable/input icon to show here"
+    android:title="input title to show underneath the icon here"
+    app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/screen3"
+    android:enabled="true"
+    android:icon="@drawable/input icon to show here"
+    android:title="input title to show underneath the icon here"
+    app:showAsAction="ifRoom" />
+</menu>
