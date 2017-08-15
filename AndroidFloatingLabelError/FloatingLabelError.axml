@@ -1,0 +1,55 @@
+<!-- This file shows you how to implement Android's floating labels with errors using Xamarins C# code
+
+The AXML code goes in the layout folder of your file structure
+
+The Commented code goes in the activity where the layout is set  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/androidInputLayout1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      app:errorEnabled="true">
+        <android.support.design.widget.TextInputEditText
+        android:id="@+id/androidEditText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Insert hint that turns into label here" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+      android:id="@+id/androidInputLayout2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      app:errorEnabled="true">
+        <android.support.design.widget.TextInputEditText
+        android:id="@+id/androidEditText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Insert hint that turns into label here" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+
+<!--------------------------------------------------------------------------------------
+This goes in the activity onCreate() in order to implement the floating labels with errors:
+
+Declarations:
+
+TextInputLayout adidError;
+TextInputLayout passError;
+
+Find the axml IDs:
+
+adidError = FindViewById<TextInputLayout>(Resource.Id.adid_input_layout);
+passError = FindViewById<TextInputLayout>(Resource.Id.password_input_layout);
+
+Add the errors to the floating labels:
+
+adidError.Error = "The ADID you entered is not valid";
+passError.Error = "The Password you entered is not valid"; 
+--------------------------------------------------------------------------------------->
